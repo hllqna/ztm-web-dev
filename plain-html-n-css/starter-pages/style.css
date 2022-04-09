@@ -1,0 +1,85 @@
+/* To lower the weight of css file to transfer over the web, use css-minify */
+
+/* Selector {
+    Property: value;
+} */
+
+/* reference: css-tricks almanac */
+/* for colours use paletton.com */
+
+/* Reference for selectors:
+1. "*" for all elements
+2. "element1, element2" - apply for both selectors
+3. "element1 element2" - apply for all element2 that is under element1
+4. "element1 > element2" - apply for all element2 that is a direct child of element1 (not deeply nested!)
+5. "element1 + element2" - apply to element2 that is exactly after element1
+6. "element: hover" - apply when the cursor is over
+7. "element:last-child" - apply to the last child of that element class
+8. "element:first-child" - guess what :)
+9. "!important" - break cascading for this rule; do not overwrite this rule (not recommended)
+10. ".class"
+11. "#id" 
+inline styles win over the others
+*/
+
+
+
+* {
+    text-align: right;
+}
+
+body {
+    background-image: url(background-image2.jpg);
+    background-size: cover;
+}
+
+h2, p {
+    color: #AA4139;
+    text-align: center;
+    border: 5px dashed rgba(255, 176, 170, 0.8);
+    cursor: progress;
+}
+
+p {
+    color: rgb(51, 80, 245);
+    background: rgba(255, 248, 220, 0.599);
+    /* text-decoration: underline; */
+    /* text-transform: uppercase; */
+    line-height: 25px;
+    /* font-style: italic; */
+    font-weight: 360;
+    font-size: 115%;
+    font-family: 'Syne Mono', monospace;
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
+    
+}
+
+img {
+    float: left;
+}
+
+footer {
+    clear: both; /* so that we don't have footer in a float */
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.webtext {
+    border: 3px solid rgba(125, 21, 245, 0.8)
+}
+
+.active {
+    color:chartreuse;
+}
+
+#div1 {
+    background: rgba(255, 127, 80, 0.486);
+}
+
+#div2 {
+    background: rgba(139, 214, 89, 0.486);
+}
